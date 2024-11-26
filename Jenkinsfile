@@ -7,6 +7,7 @@ pipeline {
       stage("INIT") {
         steps {
             echo "INIT"
+	    echo "CHECKOUT GIT STAGE"
         }
       }
       stage("PACKAGE") {
@@ -15,6 +16,9 @@ pipeline {
             sh "mvn package"
             sh "ls -a"
         }
+      }
+      stage("PUSH") {
+	echo "PUSH TO DOCKER STAGE"
       }
     }
 }
