@@ -19,6 +19,7 @@ pipeline {
       }
       stage("PUSH") {
 	echo "PUSH TO DOCKER STAGE"
+	echo "PUSH TO DOCKER STAGE"
       }
     }
 }
