@@ -18,8 +18,11 @@ pipeline {
         }
       }
       stage("PUSH") {
+	steps{
+		echo "PUSH TO DOCKER STAGE"
 	echo "PUSH TO DOCKER STAGE"
-	echo "PUSH TO DOCKER STAGE"
+}
+
       }
     }
 }
